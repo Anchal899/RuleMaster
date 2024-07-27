@@ -6,10 +6,11 @@ const RuleForm = () => {
     const [combinedRuleStrings, setCombinedRuleStrings] = useState([]);
     const [data, setData] = useState('{}');
     const [evaluationResult, setEvaluationResult] = useState(null);
+    const BASE_URL='https://rulemaster-backend-1.onrender.com';
   
     const handleCreateRule = async () => {
         try {
-            const response = await fetch('http://localhost:5000/create_rule', {
+            const response = await fetch(`${BASE_URL}/create_rule`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -31,7 +32,7 @@ const RuleForm = () => {
 
     const handleCombineRules = async () => {
         try {
-            const response = await fetch('http://localhost:5000/combine_rules', {
+            const response = await fetch(`${BASE_URL}/combine_rules`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -80,7 +81,7 @@ const RuleForm = () => {
             // Attempt to parse formattedRule
            
             // Send data to the server
-            const response = await fetch('http://localhost:5000/evaluate_rule', {
+            const response = await fetch(`${BASE_URL}/evaluate_rule`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
