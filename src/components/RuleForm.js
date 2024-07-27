@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const RuleForm = () => {
     const [name, setName] = useState('');
-    const [ruleString, setRuleString] = useState('');
+    const [ruleString, setRuleString] = useState('()');
     const [combinedRuleStrings, setCombinedRuleStrings] = useState([]);
     const [data, setData] = useState('{}');
     const [evaluationResult, setEvaluationResult] = useState(null);
