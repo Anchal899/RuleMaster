@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+RuleMaster
+(Rule Engine with AST)
+Overview:
+RuleMaster is a comprehensive rule evaluaƟon and management system designed to parse
+and evaluate complex rules dynamically. Built using the MERN (MongoDB, Express, React,
+Node.js) stack, RuleMaster provides a flexible plaƞorm for defining, parsing, and evaluaƟng
+rules based on various condiƟons. It is ideal for applicaƟons requiring complex business logic
+and condiƟonal operaƟons.
+Features:
+- Rule DefiniƟon: Allows users to define complex rules using logical operators (AND, OR) and
+comparison operators (==, !=, <, >, etc.).
+- Rule Parsing: Efficiently parses and constructs Abstract Syntax Trees (AST) for complex rules
+to facilitate easy evaluaƟon.
+- Data EvaluaƟon:Evaluates defined rules against provided data to determine whether the
+condiƟons are met.
+- Error Handling: Provides detailed error messages for invalid rule formats and evaluaƟon
+issues.
+- Rule Management: Supports creaƟng, updaƟng, and deleƟng rules, offering flexibility in
+rule management.
+- Real-Time EvaluaƟon: ConƟnuously evaluates rules in real-Ɵme or on-demand based on
+user interacƟons or system events.
+Technologies:
+- MongoDB: NoSQL database for storing rules and associated data.
+- Express: Web framework for building the server-side applicaƟon and API endpoints.
+- React: Frontend library for building the user interface and handling interacƟons.
+- Node.js: JavaScript runƟme for building the backend and handling server-side logic.
+- Vercel/GitHub: Deployment and version control for hosƟng and managing the project.
+Rollups and Aggregates:
+1. Rule AggregaƟon:
+ - Rule Parsing and ConstrucƟon:Parses input rules and constructs ASTs for easy evaluaƟon.
+ - CondiƟon AggregaƟon: Aggregates various condiƟons into a cohesive rule set for
+evaluaƟon.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Error Handling:
+ - Invalid Format DetecƟon: Alerts users to errors in rule formaƫng and provides guidance
+for correcƟon.
+ - Detailed Error ReporƟng: Provides detailed logs and error messages for debugging.
+Usage:
+1. Rule CreaƟon: Define rules using a user-friendly interface or API endpoints.
+2. Data Input: Submit data for evaluaƟon against the defined rules.
+3. Rule EvaluaƟon: View results of rule evaluaƟons and receive error messages for invalid
+rules.
+4. Real-Time Updates: Monitor and evaluate rules in real-Ɵme or at specified intervals.
+Deployment:
+The project is deployed on Vercel.
+Backend is deployed on render and Frontend is deployed on Vercel
+You can access the live applicaƟon at: hƩps://rule-master-bice.vercel.app/
+GitHub:
+Frontend Link: hƩps://github.com/Anchal899/RuleMaster/tree/main
+Backend Link: hƩps://github.com/Anchal899/RuleMaster-backend
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Example:
+Input:
+(age>30 AND name=="Saroj" AND salary>50 OR department=="Sales")
